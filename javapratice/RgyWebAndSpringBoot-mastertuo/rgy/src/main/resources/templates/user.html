@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>用户管理</title>
+    <script>
+        window.onload = function () {
+            document.getElementById("section_box").style.display = "none";
+            document.getElementById("section_box_add").style.display = "none";
+            var changebtn = document.getElementById("changeFile");
+            var close = document.getElementById("section_addElement_box_title_close");
+            var close_add = document.getElementById("section_addElement_box_title_close_add");
+            var section_addElement_box = document.getElementById("section_addElement_box");
+            var section_addElement_box_add = document.getElementById("section_addElement_box_add");
+            changebtn.onclick = function () {
+                section_addElement_box.style.display = "block";
+                document.getElementById("section_box").style.display = "block";
+            };
+            close.onclick = function () {
+                section_addElement_box.style.display = "none";
+                document.getElementById("section_box").style.display = "none";
+            };
+            close_add.onclick = function () {
+                section_addElement_box_add.style.display = "none";
+                document.getElementById("section_box_add").style.display = "none";
+            };
+            document.getElementById("searchbox_add").onclick = function () {
+                section_addElement_box_add.style.display = "block";
+                document.getElementById("section_box_add").style.display = "block";
+            };
+        }
+    </script>
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <script language="JavaScript" src="../js/jquery.js"></script>
+    <script language="JavaScript" src="../js/moveNavBar.js"></script>
+</head>
+<body>
+<div id="body">
+    <div class="Top">
+        <div class="TopLogo">
+            <div class="TopLogo1">TPRI</div>
+            <div class="TopLogo2">西安热工院调试部电气试验业务云平台</div>
+        </div>
+        <div class="Top1">
+            <a href="/power/findall" id="1" target="centerFrame">设备管理</a>
+            <a href="/contract/findall" id="2" target="centerFrame">合同管理</a>
+            <a href="/guidingbook/findall" id="3" target="centerFrame">试验管理</a>
+            <a href="/user/findall" id="4" target="centerFrame">系统管理</a>
+            <a href="/caseLibrary/findall" id="5 "target="centerFrame">案例库管理</a>
+            <div class="Top1_1"></div>
+            <div class="Top1_2">用户名</div>
+        </div>
+        <div class="Top2">
+            <div class="Top2_1"></div>
+            <div class="Top2_2"></div>
+            <div class="Top2_3"></div>
+            <div class="Top2_4"></div>
+            <div class="Top2_5"></div>
+        </div>
+    </div>
+    <div id="section">
+        <div id="section_header">
+            <ul>
+                <li id="i1" class="section_li"><a href="/user/findall">用户管理</a></li>
+                <li id="i2" class="section_li"><a href="/role/findall">角色管理</li>
+            </ul>
+        </div>
+        <div id="searchbox">
+            <form>
+                <span>真实姓名：</span>
+                <input type="text" placeholder="请输入">
+                <button class="btn1" type="button">查询</button>
+                <button type="reset" class="btn2">重置</button>
+                <button class="searchbox_add" id="searchbox_add" type="button"><span class="searchbox_add_1">＋</span><span class="searchbox_add_2">新增</span></button>
+            </form>
+        </div>
+        <div id="filetable">
+            <table style="overflow: hidden">
+                <thead>
+                <tr>
+                    <td><span>用户名</span></td>
+                    <td><span>真实姓名</span></td>
+                    <td><span>联系方式</span></td>
+                    <td><span>用户角色</span></td>
+                    <td><span>操作</span></td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="entry:${users}">
+                    <td><span th:text="${entry.username}"></span></td>
+                    <td><span><a th:text="${entry.realName}"></a></span></td>
+                    <td><span th:text="${entry.phone}"></span></td>
+                    <td><span th:text="${entry.roleId}"></span></td>
+                    <td><span id="changeFile">修改</span>|<span><a href="">删除</a></span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!--修改文档弹出框-->
+        <div class="section_addElement_box" id="section_box">
+            <div id="section_addElement_box">
+                <div id="section_addElement_box_title">
+                    <span>修改文档</span>
+                    <div id="section_addElement_box_title_close">×</div>
+                </div>
+                <div id="section_addElement_box_name">
+                    <span>文档名称：</span>
+                    <input type="text" placeholder="请输入">
+                </div>
+                <div id="section_addElement_box_file">
+                    <span>附件：</span>
+                    <input id="upload" type="file">
+                    <label for="upload">
+                        <div class="upload">
+                            <img src="deploy_icon_upload@2x.png" alt="">
+                            <span>上传附件</span>
+                        </div>
+                    </label>
+                </div>
+                <div id="section_addElement_box_hold">
+                    <span>保存</span>
+                </div>
+            </div>
+        </div>
+
+        <!--新增弹出框-->
+        <div class="section_addElement_box" id="section_box_add">
+            <div id="section_addElement_box_add">
+                <div id="section_addElement_box_title">
+                    <span>新增文档</span>
+                    <div id="section_addElement_box_title_close_add">×</div>
+                </div>
+                <div id="section_addElement_box_name">
+                    <span>文档名称：</span>
+                    <input type="text" placeholder="请输入">
+                </div>
+                <div id="section_addElement_box_file">
+                    <span>附件：</span>
+                    <input id="upload" type="file">
+                    <label for="upload">
+                        <div class="upload">
+                            <img src="deploy_icon_upload@2x.png" alt="">
+                            <span>上传附件</span>
+                        </div>
+                    </label>
+                </div>
+                <div id="section_addElement_box_hold">
+                    <span>保存</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
