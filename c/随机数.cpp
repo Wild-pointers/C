@@ -1,17 +1,19 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-int main()
+#include<time.h>
+#include<stdlib.h>
+int main(){
+int a[10];
+char c;
+srand((unsigned)time(NULL));
+for(int i=0;i<10;i++)
 {
-	int i,a[100],max;
-	srand(time(NULL));
-	for(i=0;i<100;i++)
-	a[i]=rand()%1000;
-	max=a[0];
-	for(i=0;i<100;i++)
-	if(max<a[i])
-	max=a[i];
-	for(i=0;i<100;i++)
-	printf("%d\t",a[i]);
-	printf("max=%d\n",max); 
+	A: a[i]=rand()%26+65;
+	for(int j=0;j<i;j++)
+	{
+		if(a[i] == a[j])goto A;
+	}
+}
+for(int i=0;i<10;i++)
+	
+	printf("%c ",a[i]);
 }
