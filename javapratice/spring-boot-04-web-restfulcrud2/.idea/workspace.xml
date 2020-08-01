@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="192a6b13-1e9e-48cc-97f9-b2def6dc19c3" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="spring-boot-04-web-restfulcrud" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\maven3.5.4\apache-maven-3.5.4" />
+        <option name="userSettingsFile" value="E:\maven3.5.4\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1caCNfsYRSxZ9SKyTBg64KyrB3j" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../代码/spring-boot-04-web-restfulcrud" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\java\spring-boot-04-web-restfulcrud\src\main\resources\templates\emp" />
+      <recent name="E:\java\spring-boot-04-web-restfulcrud\src\main\resources\public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\java\spring-boot-04-web-restfulcrud\src\main\resources\templates" />
+      <recent name="E:\java\spring-boot-04-web-restfulcrud\src\main\java\com\atguigu\springboot" />
+      <recent name="E:\java\spring-boot-04-web-restfulcrud\src\main\resources\resources" />
+      <recent name="E:\java\spring-boot-04-web-restfulcrud\src\main\resources\public" />
+      <recent name="E:\java\spring-boot-04-web-restfulcrud\src\main\resources\static" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="SpringBoot04WebRestfulcrudApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-04-web-restfulcrud" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.springboot.SpringBoot04WebRestfulcrudApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="192a6b13-1e9e-48cc-97f9-b2def6dc19c3" name="Default Changelist" comment="" />
+      <created>1590757278146</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590757278146</updated>
+      <workItem from="1590757279491" duration="4291000" />
+      <workItem from="1591339109635" duration="3485000" />
+      <workItem from="1591689383611" duration="1408000" />
+      <workItem from="1592829762748" duration="311000" />
+      <workItem from="1594472778913" duration="377000" />
+      <workItem from="1595760930527" duration="1129000" />
+      <workItem from="1595854655072" duration="1226000" />
+      <workItem from="1595940701901" duration="2419000" />
+      <workItem from="1596077175571" duration="6084000" />
+      <workItem from="1596159585830" duration="16042000" />
+      <workItem from="1596247811019" duration="9318000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/atguigu/springboot/component/MyLocaleResolver.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
